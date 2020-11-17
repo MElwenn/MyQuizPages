@@ -9,7 +9,12 @@ import { Observable } from 'rxjs';
 export class QuestionsService {
 
   //constructor(private http: HttpClient) {
-  constructor(public http: HttpClient) { //tells Angular to inject an HttpClient into this class
+  //constructor(public http: HttpClient) { //tells Angular to inject an HttpClient into this class
+  //}
+
+  //Testing the long version
+  constructor(public http: HttpClient) {
+    this.http = http;
   }
 
   public getJSON(fileId: string) {
