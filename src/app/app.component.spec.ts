@@ -1,9 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [                 // stackoverflow: https://stackoverflow.com/questions/54976493/nullinjectorerror-no-provider-for-formbuilder-im-importing-reactiveformsmodul
+        ReactiveFormsModule      // stackoverflow
+      ],                         // stackoverflow
       declarations: [
         AppComponent
       ],
