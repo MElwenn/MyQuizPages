@@ -1,4 +1,17 @@
 import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: '<router-outlet></router-outlet>'
+})
+
+export class AppComponent {
+  title = 'my-awesome-quiz-app';
+}
+
+// 3.7-Code starts here
+/*
+import { Component } from '@angular/core';
 import { QuestionsService } from './questions.service';
 import { Quiz, Answers, Choice } from './quiz.model';
 
@@ -40,3 +53,4 @@ export class AppComponent {
     this.currentQuestionIndex++;
   }
 }
+*/

@@ -1,0 +1,23 @@
+<!-- choose a quiz -->
+<div>
+    <h1>This is the welcome page</h1>
+
+    <div>
+        <div>
+            <mat-card color="primary">
+                <mat-card-title class="title">Choose your Quiz</mat-card-title>
+            </mat-card>
+            <div *ngFor="let q of quiz">
+                <mat-card class="flex-container">
+                    <mat-card-title>{{q.label}}</mat-card-title>
+                    <mat-card-subtitle>{{q.description}}</mat-card-subtitle>
+                    <mat-card-actions>
+                        <button mat-button color="secondary" class="button">
+                            <a routerLink="/{{q.name}}" class="button">Select this quiz</a>
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
