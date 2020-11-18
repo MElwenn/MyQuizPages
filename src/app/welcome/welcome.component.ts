@@ -11,7 +11,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class WelcomeComponent implements OnInit {
   public quiz: Quiz[];
 
-  constructor(private questionService: QuestionsService) {
+  constructor(public questionService: QuestionsService) {
     questionService.getQuizzes().subscribe((response) => {
       this.quiz = response;
     });

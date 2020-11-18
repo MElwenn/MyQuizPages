@@ -23,7 +23,7 @@ export class QuestionsService {
   //}
 
   public getQuizzes() {   //load the list of quizzes
-    return this.http.get(`./assets/quiz-list.json`).pipe(
+    return this.http.get(`./assets/assets.quiz-list.json`).pipe(
       map((result: any[]) => {
         return result.map(r => new Quiz(r.label, r.name, r.description, r.fileName));
       })
