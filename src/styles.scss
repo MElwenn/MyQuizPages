@@ -1,4 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
-
+/*
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+*/
+
+body {
+    background-color: #F5F5F5;
+    color: #333333;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px; /* Sets the font size to 16px */
+    line-height: 1.6; /* Sets the line-height to 1.6 */
+}
+
+mat-card {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.link {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+.link-visible {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.page-content-centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100%;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F5F5F5;
+}
+
+h1 {                       
+    font-size: 22px;        
+}
+
+h2 {
+    font-size: 20px;
+  }
+h3 {
+    font-size: 18px;
+}
+
+.button {
+    border: #5000ae 1px solid;
+    font-family: inherit;
+    font-size: adjust;
+    background-color: #5000ae;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border-bottom: none;
+    transition: 0.2s opacity;
+    white-space: nowrap; /* aviod the button to line break */
+}
+
+.button__secondary {
+    border: #5000ae 1px solid;
+    background-color:rgba(255,255,255,0.2);
+    color: #5000ae;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s opacity;
+    white-space: nowrap; /* aviod the button to line break */
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
