@@ -1,1 +1,23 @@
+<!-- ngClass directive is used to set a correct class to an answer if its model is correct -->
+<!--
+<div class="results">
+    <h2>Results</h2>
+    <div class="answer" *ngFor="let a of answers.values" [ngClass]="{correct: a.correct}">
+        {{a.value}}
+    </div>
+</div>
 <a routerLink="/welcome" class="btn btn-primary">Choose another quiz</a>
+-->
+
+<mat-card>
+    <mat-card-title class="title">Results</mat-card-title>
+    <mat-card-content class="answer mat-app-background" *ngFor="let a of answers.values"
+        [ngClass]="{correct: a.correct}">
+        {{a.value}}
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button color="primary" class="btn btn-primary">
+            <a routerLink="/welcome" class="btn btn-primary">Choose another quiz</a>
+        </button>
+    </mat-card-actions>
+</mat-card>

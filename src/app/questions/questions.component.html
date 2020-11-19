@@ -7,9 +7,8 @@
         <div class="questions" *ngIf="!showResults">
             <app-question-form [question]="questions[currentQuestionIndex]" (onChoiceMade)="updateChoice($event)">
             </app-question-form>
-
-            <button class="btn btn-success" (click)="nextOrViewResults()"
-                [disabled]="!answers.values[currentQuestionIndex]">
+            <br>
+            <button class="button" (click)="nextOrViewResults()" [disabled]="!answers.values[currentQuestionIndex]">
                 {{currentQuestionIndex === questions.length - 1 ? 'View results' : 'Next'}}
             </button>
         </div>
