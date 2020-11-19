@@ -1,3 +1,4 @@
+// Test
 import { Component, /*OnInit*/ Input } from '@angular/core';
 import { Answers } from '../quiz.model';
 
