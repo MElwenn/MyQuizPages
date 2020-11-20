@@ -6,12 +6,28 @@ body {
     font-size: 16px; /* Sets the font size to 16px */
     line-height: 1.6; /* Sets the line-height to 1.6 */
 }
-
+/*component-specific styles*/
 mat-card {
     width: 60%;
     margin: auto;
     text-align: center;
 }
+
+.answer{
+    background-color: #FF6666; /*similar to bittersweet http://html-color.org/de/FE6F5E*/
+    width: auto;
+    font-size: 26px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.correct{
+    background-color: #99FF66; /*similar to Inchwarm http://html-color.org/de/b2ec5d*/
+}
+
+/*component-specific styles END*/
 
 .link {
     color: var(--font-color);
